@@ -37,8 +37,10 @@ public class ObtenerDatosApiService {
 		Encrypt security = new Encrypt();
 
 		String url = "http://gateway.marvel.com/v1/public/characters";
-		url = url.concat("?apikey=8c3c985dc02326754511ca7c9fc2355a&ts=1");
-		String hash = security.getMD5("1526c6f" + "0f38e2bf5215faf9bba26835673914ae098c3c985dc02326754511ca7c9fc2355a");
+		url = url.concat("?apikey=<<ponervuestraapikey&ts=1");
+		//md5(ts+privateKey+publicKey)
+		
+		String hash = security.getMD5("<<ts+privateKey+publicKey>>");
 		
 		url = url.concat("&hash=").concat(hash);
 		

@@ -17,6 +17,7 @@ import com.prueba.pruebatecnica.service.PersonajeService;
 public class PruebaTecnicaController {
 	@Autowired
 	ObtenerDatosApiService data;
+	
 	@Autowired
 	PersonajeService person;
 	
